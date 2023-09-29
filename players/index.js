@@ -4,17 +4,17 @@ const rnorm=require('util/rnorm/gift');
 const seq=require('util/seq');
 
 
-const person=()=>{
+const player=()=>{
   const gift=rnorm();
   const score=10;
   return { gift, score, };
 };
 
 
-const persons=(cnt)=>{
+const players=(cnt)=>{
   return seq(cnt).map(
-    num => person() );  
+    num => player() );  
 };
 
 
-module.exports=persons;
+module.exports=players;
